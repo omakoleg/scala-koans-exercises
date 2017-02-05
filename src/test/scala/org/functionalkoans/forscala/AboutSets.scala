@@ -18,7 +18,6 @@ class AboutSets extends KoanSuite {
     val aNewSet = mySet + "Illinois"
 
     aNewSet.contains("Illinois") should be(true)
-
   }
 
   koan("Sets may be of mixed type") {
