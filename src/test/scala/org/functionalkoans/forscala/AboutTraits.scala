@@ -79,7 +79,6 @@ class AboutTraits extends KoanSuite {
 
       def log(value: String) = {
         logCache = logCache :+ value
-        println(value)
       }
     }
 

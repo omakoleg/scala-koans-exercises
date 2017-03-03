@@ -27,7 +27,6 @@ class AboutByNameParameter extends KoanSuite {
       14 + 15
     }
 
-      println(y)
     y should be (Right(29))
   }
 

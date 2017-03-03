@@ -504,8 +504,6 @@ class AboutTraversables extends KoanSuite with ShouldMatchers {
     lst.map { x => addHistory("Doubling %s".format(x)); x * 2}.map
             { x => addHistory("Adding 1 to %s".format(x)); x + 1}
 
-    println(history)
-
     history(0) should be("Doubling 1")
     history(1) should be("Doubling 2")
     history(2) should be("Doubling 3")
@@ -517,8 +515,6 @@ class AboutTraversables extends KoanSuite with ShouldMatchers {
 
     lst.view.map { x => addHistory("Doubling %s".format(x)); x * 2}.map {
                    x => addHistory("Adding 1 to %s".format(x)); x + 1}.force
-
-    println(history)
 
     history(0) should be("Doubling 1")
     history(1) should be("Adding 1 to 2")
